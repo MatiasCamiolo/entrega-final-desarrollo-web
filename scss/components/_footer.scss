@@ -1,0 +1,44 @@
+footer {
+    border-top: $color-borde;
+    background-color: $color-verde;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+@media (max-width: 575px) {
+
+    // Dispositivos móviles
+    footer {
+        padding: 10px;
+        text-align: center; // Centrar el texto en pantallas móviles
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    // Tabletas en modo vertical
+    footer {
+        padding: 15px;
+        text-align: center; // Asegurar que el footer se vea centrado
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    // Pantallas de escritorio pequeñas
+    footer {
+        padding: 25px;
+        text-align: left;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    footer {
+        padding: 30px;
+        text-align: left;
+    }
+}

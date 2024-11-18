@@ -210,4 +210,124 @@ body {
 footer {
   border-top: $color-borde;
   background-color: $color-verde;
+  padding: 20px 0;
+  text-align: center;
+}
+
+// Media Queries para header, body y footer
+
+@media (max-width: 575px) {
+  // Dispositivos móviles
+  header {
+    height: 120px; // Reducir la altura del header
+    padding: 5px 0;
+  }
+
+  .logo-pc {
+    width: 60px; // Reducir el tamaño del logo
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin: 0 8px; // Reducir margen entre los elementos de navegación
+    }
+
+    .nav-link {
+      padding: 8px 12px; // Reducir el padding de los enlaces
+    }
+  }
+
+  body {
+    font-size: 14px;  // Reducir tamaño de fuente en móviles
+    padding: 5px;  // Reducir padding general
+  }
+
+  footer {
+    padding: 10px;
+    text-align: center; // Centrar el texto en pantallas móviles
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  // Tabletas en modo vertical
+  header {
+    height: 140px; // Ajustar el tamaño del header
+  }
+
+  .logo-pc {
+    width: 70px; // Ajustar tamaño del logo
+  }
+
+  body {
+    font-size: 16px;  // Ajustar tamaño de fuente en tablets
+    padding: 10px;
+  }
+
+  footer {
+    padding: 15px;
+    text-align: center; // Asegurar que el footer se vea centrado
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  // Tabletas en modo horizontal o dispositivos pequeños
+  header {
+    height: 160px; // Ajustar la altura del header
+  }
+
+  .logo-pc {
+    width: 80px;
+  }
+
+  body {
+    font-size: 18px;  // Ajustar tamaño de fuente
+    padding: 15px;
+  }
+
+  footer {
+    padding: 20px;
+    text-align: left; // Alinear el texto a la izquierda
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  // Pantallas de escritorio pequeñas
+  header {
+    height: 180px;
+  }
+
+  .logo-pc {
+    width: 90px;
+  }
+
+  body {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: left; 
+  }
+}
+
+@media (min-width: 1200px) {
+  
+  header {
+    height: 200px;
+  }
+
+  .logo-pc {
+    width: 100px;
+  }
+
+  body {
+    font-size: 22px;
+    padding: 25px; 
+  }
+
+  footer {
+    padding: 30px;
+    text-align: left; 
+  }
 }

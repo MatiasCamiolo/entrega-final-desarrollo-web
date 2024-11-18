@@ -166,6 +166,96 @@ body .fondo-nosotros {
 footer {
   border-top: solid black;
   background-color: rgb(77, 175, 11);
+  padding: 20px 0;
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  header {
+    height: 120px;
+    padding: 5px 0;
+  }
+  .logo-pc {
+    width: 60px;
+  }
+  .navbar-nav .nav-item {
+    margin: 0 8px;
+  }
+  .navbar-nav .nav-link {
+    padding: 8px 12px;
+  }
+  body {
+    font-size: 14px;
+    padding: 5px;
+  }
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  header {
+    height: 140px;
+  }
+  .logo-pc {
+    width: 70px;
+  }
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+  footer {
+    padding: 15px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    height: 160px;
+  }
+  .logo-pc {
+    width: 80px;
+  }
+  body {
+    font-size: 18px;
+    padding: 15px;
+  }
+  footer {
+    padding: 20px;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  header {
+    height: 180px;
+  }
+  .logo-pc {
+    width: 90px;
+  }
+  body {
+    font-size: 20px;
+    padding: 20px;
+  }
+  footer {
+    padding: 25px;
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    height: 200px;
+  }
+  .logo-pc {
+    width: 100px;
+  }
+  body {
+    font-size: 22px;
+    padding: 25px;
+  }
+  footer {
+    padding: 30px;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -61,3 +61,40 @@ header {
     }
   }
 }
+
+
+
+@media (max-width: 575px) {
+  header {
+    height: 120px; // Reducir la altura del header
+    padding: 5px 0;
+  }
+
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  // Tabletas en modo vertical
+  header {
+    height: 140px; // Ajustar el tamaño del header
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  // Tabletas en modo horizontal o dispositivos pequeños
+  header {
+    height: 160px; // Ajustar la altura del header
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  // Pantallas de escritorio pequeñas
+  header {
+    height: 180px;
+  }
+}
