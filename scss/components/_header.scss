@@ -1,0 +1,63 @@
+header {
+  background-color: rgba(0, 0, 0, 0.747);
+  padding: 10px 0;
+  height: 150px;
+
+  .logo-pc {
+    width: 80px;
+    padding: 5px;
+  }
+
+  h1 {
+    color: $color-blanco;
+    font-weight: bold;
+  }
+}
+
+.navbar {
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+
+  .navbar-toggler-icon {
+    background-color: $color-blanco !important;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+
+    .nav-item {
+      margin: 0 12px;
+
+      .nav-link {
+        display: inline-block;
+        padding: 10px 15px;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: $color-gris;
+        color: $color-blanco;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+          background-color: $color-verde;
+          color: $color-gris;
+        }
+
+        &.active {
+          color: $color-gris;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  background-color: $color-verde;
+
+  .dropdown-item {
+    color: $color-blanco;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.103);
+    }
+  }
+}

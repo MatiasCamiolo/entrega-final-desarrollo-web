@@ -1,0 +1,20 @@
+.productos-tienda {
+  width: 45%; /* El ancho es 45% del contenedor padre */
+  height: 250px; /* Altura fija de 250px */
+  object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsión */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  display: block; /* Asegura que la imagen se comporte como un bloque, lo que permite centrarla */
+}
+
+.img-prod {
+  width: 28%;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.fondo-nosotros {
+  width: 100%;
+  max-height: 450px;
+  margin-bottom: 12px;
+}
