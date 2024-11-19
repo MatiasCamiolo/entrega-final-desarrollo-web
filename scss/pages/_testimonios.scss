@@ -1,0 +1,20 @@
+.seccion-testimonios-clientes {
+    border: 6px $color-borde;
+    background-color: rgba(245, 245, 245, 0.233);
+
+    .subtitulo-testimonios {
+        background-color: $color-verde;
+        width: 100%;
+        margin-top: 16px;
+    }
+}
+
+.formulario-testimonios {
+    background-color: rgba(245, 245, 245, 0.9); // Fondo sutil para el formulario
+    border: 1px solid $color-borde; // Borde con color definido
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra suave
+    border-radius: 8px; // Bordes redondeados
+    width: 80%; // Ahora el formulario ocupa un 80% del contenedor
+    max-width: 900px; // Aumento del ancho máximo
+    margin: 40px auto; // Centrado y con margen superior e inferior
+}

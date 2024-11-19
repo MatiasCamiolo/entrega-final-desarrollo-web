@@ -2,17 +2,18 @@ header {
   background-color: rgba(0, 0, 0, 0.747);
   padding: 10px 0;
   height: 150px;
-
-  .logo-pc {
-    width: 80px;
-    padding: 5px;
-  }
-
-  h1 {
-    color: $color-blanco;
-    font-weight: bold;
-  }
 }
+
+.logo-pc {
+  width: 80px;
+  padding: 5px;
+}
+
+h1 {
+  color: $color-blanco;
+  font-weight: bold;
+}
+
 
 .navbar {
   box-shadow: 0 2px 5px rgb(0, 0, 0);
