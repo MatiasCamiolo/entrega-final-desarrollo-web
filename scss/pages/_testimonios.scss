@@ -22,3 +22,29 @@
 
 
 
+.animacion {
+    height: 250px;
+    background-color: #ffffff; // Color de fondo (blanco)
+    position: relative; // Para permitir que el texto se mueva dentro del contenedor
+}
+
+.texto-animado {
+    font-size: 2rem;
+    color: $color-verde;
+    position: absolute; // Para que el texto se mueva en relación al contenedor
+    animation: horizontal-motion 4s linear infinite; // Animación en bucle
+}
+
+@keyframes horizontal-motion {
+    0% {
+        transform: translateX(25%); // Comienza en el 25% del contenedor
+    }
+
+    50% {
+        transform: translateX(75%); // Se mueve al 75% del contenedor
+    }
+
+    100% {
+        transform: translateX(100%); // Termina fuera de la pantalla a la derecha
+    }
+}
