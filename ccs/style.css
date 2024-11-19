@@ -1,14 +1,15 @@
 @charset "UTF-8";
 header {
   background-color: rgba(0, 0, 0, 0.747);
-  padding: 10px 0;
   height: 150px;
 }
-header .logo-pc {
+
+.logo-pc {
   width: 80px;
   padding: 5px;
 }
-header h1 {
+
+h1 {
   color: white;
   font-weight: bold;
 }
