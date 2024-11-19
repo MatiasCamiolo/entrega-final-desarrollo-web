@@ -3,14 +3,13 @@ footer {
     background-color: $color-verde;
     padding: 20px 0;
     text-align: center;
+    width: 100%;
 }
-
 
 @media (max-width: 575px) {
 
     // Dispositivos móviles
     footer {
-        padding: 10px;
         text-align: center; // Centrar el texto en pantallas móviles
     }
 }
@@ -20,7 +19,6 @@ footer {
 
     // Tabletas en modo vertical
     footer {
-        padding: 15px;
         text-align: center; // Asegurar que el footer se vea centrado
     }
 }
@@ -30,7 +28,6 @@ footer {
 
     // Pantallas de escritorio pequeñas
     footer {
-        padding: 25px;
         text-align: left;
     }
 }
@@ -38,7 +35,6 @@ footer {
 
 @media (min-width: 1200px) {
     footer {
-        padding: 30px;
         text-align: left;
     }
 }

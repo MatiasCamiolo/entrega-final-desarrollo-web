@@ -1,19 +1,19 @@
 .contenedor-ayuda {
     border: $color-borde;
+  }
 
-    .div-ayuda-html {
-        background-color: whitesmoke;
-        color: $color-negro;
-        font-weight: bold;
-    }
-}
+  .div-ayuda-html {
+    background-color: whitesmoke;
+    color: $color-negro;
+    font-weight: bold;
+  }
 
-.div-preg-frec {
+  .div-preg-frec {
     ul {
-        background-color: $color-blanco;
+      background-color: $color-blanco;
     }
-}
+  }
 
-.imagen-ayuda {
+  .imagen-ayuda {
     max-height: 400px;
-}
+  }

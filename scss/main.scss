@@ -11,17 +11,18 @@ $color-borde: solid black;
 
 header {
   background-color: rgba(0, 0, 0, 0.747);
-  height: 150px;}
+  height: 150px;
+}
 
-  .logo-pc {
-    width: 80px;
-    padding: 5px;
-  }
+.logo-pc {
+  width: 80px;
+  padding: 5px;
+}
 
-  h1 {
-    color: $color-blanco;
-    font-weight: bold;
-  }
+h1 {
+  color: $color-blanco;
+  font-weight: bold;
+}
 
 
 .navbar {
@@ -148,207 +149,212 @@ h2 {
   background-color: $color-verde;
   margin-bottom: 30px;
 }
-  ul li {
-    list-style: none;
-    border: $color-borde 1px;
-    color: $color-negro;
+
+ul li {
+  list-style: none;
+  border: $color-borde 1px;
+  color: $color-negro;
+}
+
+.contenedor-ayuda {
+  border: $color-borde;
+}
+
+.div-ayuda-html {
+  background-color: whitesmoke;
+  color: $color-negro;
+  font-weight: bold;
+}
+
+.div-preg-frec {
+  ul {
+    background-color: $color-blanco;
   }
+}
 
-  .contenedor-ayuda {
-    border: $color-borde;
-  }
+.imagen-ayuda {
+  max-height: 400px;
+}
 
-  .div-ayuda-html {
-    background-color: whitesmoke;
-    color: $color-negro;
-    font-weight: bold;
-  }
 
-  .div-preg-frec {
-    ul {
-      background-color: $color-blanco;
-    }
-  }
 
-  .imagen-ayuda {
-    max-height: 400px;
-  }
+.fondo-nosotros {
+  width: 100%; // Hace que el elemento ocupe todo el ancho de la pantalla
+  height: auto; // Ajusta la altura automáticamente según el contenido
+  text-align: center; // Centra el contenido de texto
+}
 
-  .parrafo-nosotros-p {
-    font-weight: bold;
-    font-size: 2rem;
-  }
+.parrafo-nosotros-p {
+  font-weight: bold;
+  font-size: 2rem;
+}
 
-  .seccion-testimonios-clientes {
-    border: 6px $color-borde;
-    background-color: rgba(245, 245, 245, 0.233);
+.seccion-testimonios-clientes {
+  border: 6px $color-borde;
+  background-color: rgba(245, 245, 245, 0.233);
 
-    .subtitulo-testimonios {
-      background-color: $color-verde;
-      width: 100%;
-      margin-top: 16px;
-    }
-  }
-
-  .formulario-testimonios {
-    background-color: rgba(245, 245, 245, 0.9); // Fondo sutil para el formulario
-    border: 1px solid $color-borde; // Borde con color definido
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra suave
-    border-radius: 8px; // Bordes redondeados
-    width: 80%; // Ahora el formulario ocupa un 80% del contenedor
-    max-width: 900px; // Aumento del ancho máximo
-    margin: 40px auto; // Centrado y con margen superior e inferior
-  }
-
-  .fondo-nosotros {
-    width: 100%; // Hace que el elemento ocupe todo el ancho de la pantalla
-    height: auto; // Ajusta la altura automáticamente según el contenido
-    text-align: center; // Centra el contenido de texto
-  }
-
-  .seccion-tienda {
-    background-color: $color-fondo-articulo;
-    border: $color-borde;
-    color: $color-blanco ;
-  }
-  
-
-  
-  footer {
-    border-top: $color-borde;
+  .subtitulo-testimonios {
     background-color: $color-verde;
-    padding: 20px 0;
-    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+.formulario-testimonios {
+  background-color: rgba(245, 245, 245, 0.9); // Fondo sutil para el formulario
+  border: 1px solid $color-borde; // Borde con color definido
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra suave
+  border-radius: 8px; // Bordes redondeados
+  width: 80%; // Ahora el formulario ocupa un 80% del contenedor
+  max-width: 900px; // Aumento del ancho máximo
+  margin: 40px auto; // Centrado y con margen superior e inferior
+}
+
+
+
+.seccion-tienda {
+  background-color: $color-fondo-articulo;
+  border: $color-borde;
+  color: $color-blanco ;
+}
+
+
+
+footer {
+  border-top: $color-borde;
+  background-color: $color-verde;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+// Media Queries para header, body y footer
+
+@media (max-width: 575px) {
+
+  // Dispositivos móviles
+  header {
+    height: 120px; // Reducir la altura del header
+    padding: 5px 0;
+  }
+
+  .logo-pc {
+    width: 60px;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin: 0 8px;
+    }
+
+    .nav-link {
+      padding: 8px 12px;
+    }
+  }
+
+  body {
+    font-size: 14px;
+    padding: 5px;
+
+  }
+
+
+
+  footer {
+    width: 100%;
+    background-color: $color-verde;
+
+    text-align: center; // Centrar el texto en pantallas móviles
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  // Tabletas en modo vertical
+  header {
+    height: 140px; // Ajustar el tamaño del header
+  }
+
+  .logo-pc {
+    width: 70px; // Ajustar tamaño del logo
+  }
+
+  body {
+    font-size: 16px; // Ajustar tamaño de fuente en tablets
+    padding: 10px;
+  }
+
+  footer {
+    text-align: center; // Asegurar que el footer se vea centrado
+    background-color: $color-verde;
     width: 100%;
   }
+}
 
-  // Media Queries para header, body y footer
+@media (min-width: 768px) and (max-width: 991px) {
 
-  @media (max-width: 575px) {
-
-    // Dispositivos móviles
-    header {
-      height: 120px; // Reducir la altura del header
-      padding: 5px 0;
-    }
-
-    .logo-pc {
-      width: 60px;
-    }
-
-    .navbar-nav {
-      .nav-item {
-        margin: 0 8px;
-      }
-
-      .nav-link {
-        padding: 8px 12px;
-      }
-    }
-
-    body {
-      font-size: 14px;
-      padding: 5px;
-
-    }
-
-
-
-    footer {
-      width: 100%;
-      background-color: $color-verde;
-
-      text-align: center; // Centrar el texto en pantallas móviles
-    }
+  // Tabletas en modo horizontal o dispositivos pequeños
+  header {
+    height: 160px; // Ajustar la altura del header
   }
 
-  @media (min-width: 576px) and (max-width: 767px) {
-
-    // Tabletas en modo vertical
-    header {
-      height: 140px; // Ajustar el tamaño del header
-    }
-
-    .logo-pc {
-      width: 70px; // Ajustar tamaño del logo
-    }
-
-    body {
-      font-size: 16px; // Ajustar tamaño de fuente en tablets
-      padding: 10px;
-    }
-
-    footer {
-      text-align: center; // Asegurar que el footer se vea centrado
-      background-color: $color-verde;
-      width: 100%;
-    }
+  .logo-pc {
+    width: 80px;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
-
-    // Tabletas en modo horizontal o dispositivos pequeños
-    header {
-      height: 160px; // Ajustar la altura del header
-    }
-
-    .logo-pc {
-      width: 80px;
-    }
-
-    body {
-      font-size: 18px; // Ajustar tamaño de fuente
-      padding: 15px;
-    }
-
-    footer {
-      text-align: left; // Alinear el texto a la izquierda
-      background-color: $color-verde;
-      width: 100%;
-    }
+  body {
+    font-size: 18px; // Ajustar tamaño de fuente
+    padding: 15px;
   }
 
-  @media (min-width: 992px) and (max-width: 1199px) {
+  footer {
+    text-align: left; // Alinear el texto a la izquierda
+    background-color: $color-verde;
+    width: 100%;
+  }
+}
 
-    // Pantallas de escritorio pequeñas
-    header {
-      height: 180px;
-    }
+@media (min-width: 992px) and (max-width: 1199px) {
 
-    .logo-pc {
-      width: 90px;
-    }
-
-    body {
-      font-size: 20px;
-      padding: 20px;
-    }
-
-    footer {
-      text-align: left;
-      background-color: $color-verde;
-      width: 100%;
-    }
+  // Pantallas de escritorio pequeñas
+  header {
+    height: 180px;
   }
 
-  @media (min-width: 1200px) {
-
-    header {
-      height: 200px;
-    }
-
-    .logo-pc {
-      width: 100px;
-    }
-
-    body {
-      font-size: 22px;
-      padding: 25px;
-    }
-
-    footer {
-      text-align: left;
-      background-color: $color-verde;
-      width: 100%;
-    }
+  .logo-pc {
+    width: 90px;
   }
+
+  body {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  footer {
+    text-align: left;
+    background-color: $color-verde;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  header {
+    height: 200px;
+  }
+
+  .logo-pc {
+    width: 100px;
+  }
+
+  body {
+    font-size: 22px;
+    padding: 25px;
+  }
+
+  footer {
+    text-align: left;
+    background-color: $color-verde;
+    width: 100%;
+  }
+}
